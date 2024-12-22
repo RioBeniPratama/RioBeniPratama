@@ -1,0 +1,524 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(145deg, #322b2c, #4d4747); /* Gradien merah */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2), 0px 2px 5px rgba(0, 0, 0, 0.15); /* Bayangan 3D */
+  border-radius: 10px; /* Sudut melengkung pada navbar */
+  transition: all 0.3s ease-in-out; /* Transisi halus saat hover */
+}
+
+/* Navbar saat di-hover */
+.navbar:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3), 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+/* Navbar Brand (Logo dan Nama) */
+.navbar-brand {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.8em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar links */
+.nav-link {
+  font-size: 1.1em;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 15px;
+}
+
+.nav-link:hover {
+  color: #FFD700; /* Mengubah warna saat hover */
+  text-shadow: 0 0 10px #FFD700; /* Efek cahaya pada teks */
+}
+
+/* Tombol login */
+.btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #FFD700; /* Tombol berubah menjadi emas */
+  color: #8B0000; /* Warna teks menjadi merah */
+  border-color: #FFD700;
+}
+
+
+/* Hero Section */
+.hero {
+  background: url('image/img-Hero.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.btn-book {
+  padding: 12px 30px;
+  background-color: #FFD700;
+  color: #00695c;
+  border: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #ffbf00;
+  transform: translateY(-5px);
+}
+
+/* Service Section */
+.services {
+  background: linear-gradient(45deg, #382d2d, #58574f, #000000, #536d76); /* Gradasi warna */
+  color: white;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s ease;
+  text-align: center;
+  color: #333;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  color: #00695c;
+  font-weight: bold;
+}
+
+.service-item p {
+  color: #000;
+}
+
+/* Service items row adjustment for horizontal layout */
+.services .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.services .col-md-2 {
+  flex: 1;
+  max-width: 20%;
+  min-width: 230px; /* Menjaga agar item tetap responsif */
+}
+
+.services .col-sm-4 {
+  flex: 1;
+  max-width: 22%;
+}
+
+/* Testimonial Section */
+.testimonials {
+  background: #f4f4f4;
+  padding: 80px 0;
+}
+
+.testimonial-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #333;
+  margin: 20px;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-item p {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.testimonial-item h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00695c;
+}
+
+.testimonial-item h5 {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+.testimonial-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-item .quote-icon {
+  font-size: 2rem;
+  color: #f8b400; /* Warna emas untuk ikon kutipan */
+  margin-bottom: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .testimonial-item {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .testimonial-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testimonial-item h4 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial-item p {
+    font-size: 1rem;
+  }
+}
+
+/* About Section */
+.about {
+  background-image: url('image/img-About.jpg'); /* Gambar latar belakang */
+  background-size: cover;
+  background-position: center center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about h2,
+.about p {
+  color: #fff; /* Warna teks putih agar lebih terlihat di background gelap */
+}
+
+.about .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+.about .btn-book {
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: #FFD700;
+  color: #00695c;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.about .btn-book:hover {
+  background-color: #ffbf00;
+  transform: translateY(-5px);
+}
+
+.about-image img {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-member {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.team-member h5 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #333;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: #00695c;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 767px) {
+  .about .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 40px;
+  color: #333; /* Warna default ikon */
+  padding: 12px;
+  border-radius: 50%;
+  background-color: #fff; /* Background putih untuk ikon */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Efek zoom saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.social-icons a i {
+  color: #00695c; /* Warna hijau untuk ikon */
+}
+
+/* Warna untuk masing-masing ikon */
+.social-icons a:hover .fa-whatsapp {
+  color: #25D366; /* Warna hijau WhatsApp */
+}
+
+.social-icons a:hover .fa-instagram {
+  color: #E4405F; /* Warna merah muda Instagram */
+}
+
+.social-icons a:hover .fa-facebook-f {
+  color: #1877F2; /* Warna biru Facebook */
+}
+
+/* Animasi Zoom In */
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.social-icons a {
+  animation: zoomIn 0.5s ease-in-out; /* Menambahkan animasi */
+}
+
+/* Register Section Styles */
+.register {
+  background: #f3f4f6;
+  padding: 80px 0;
+  animation: fadeInUp 1s ease-out;
+}
+
+.register .section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  animation: slideInLeft 1s ease-out;
+}
+
+.register form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Membuat lebar form mengikuti lebar container */
+  max-width: 800px; /* Batasan lebar maksimum */
+  animation: fadeIn 1.2s ease-in-out;
+  margin: 0 auto; /* Center form */
+}
+
+.register form .form-label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #555;
+}
+
+.register form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 14px;
+  font-size: 1.1rem;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.register form .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.register form button {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFD700;
+  color: white;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register form button:hover {
+  background-color: #9a6c17;
+}
+
+.register .form-group {
+  margin-bottom: 25px;
+}
+
+.register .form-control::placeholder {
+  font-style: italic;
+  color: #aaa;
+}
+
+/* Animation for inputs and submit button */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .register form {
+    padding: 30px;
+  }
+  
+  .register .section-title {
+    font-size: 2rem;
+  }
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceInUp {
+  0% { transform: translateY(100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .services .col-md-2 {
+    max-width: 45%; /* Memperlebar pada layar kecil */
+  }
+
+  .services .col-sm-4 {
+    max-width: 48%; /* Membuat lebih fleksibel di perangkat kecil */
+  }
+}
